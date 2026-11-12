@@ -8,7 +8,7 @@ def scrape_primes():
     url = "https://en.wikipedia.org/wiki/List_of_prime_numbers"
     
     # adding headers, since wikipedia blocks requests with no headers
-    headers = {'User-Agent': 'PrimeScraper/1.0 (https://website.com; your@example.com) python-requests/2.31.0'}
+    headers = {'User-Agent': 'PrimeScraper/1.0 (https://mywebsite.com; me@example.com) python-requests/2.31.0'}
     response = requests.get(url, headers=headers)
     #print(response)
     soup = BeautifulSoup(response.text, 'html.parser')
